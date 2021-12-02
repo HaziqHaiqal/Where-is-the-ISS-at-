@@ -1,0 +1,43 @@
+<DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>International Space Station(ISS) Location</title>
+        <!-- Main Style Sheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Calender Style Sheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css" />
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>ISS Locator</h1>
+            <div id="wrapper">
+                <h2>Select date & Time</h2>
+                <input id="txtdateTime" type="text" value="Enter Date">
+                <h2>Latitude</h2>
+                <p id="s1"></p>
+                <h2>Logitude</h2>
+                <p id="s2"></p>
+                <h2>Timezone</h2>
+                <p id="s3"></p>
+                <h2>Location</h2>
+                <p id="s4"></p>
+                <h2>Location per Two Hour (Before and After)</h2>
+                <p id="s5"></p>
+                <button onclick="reload()">Submit</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>©2021 MHHK</p>
+        </div>
+
+        <!-- main JavaScript -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js "></script>
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>

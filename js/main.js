@@ -14,19 +14,20 @@ $(function () {
     });
 });
 
+
 /*--------------- Get Time & Date ---------------*/
 
-var datetimepicker = document.getElementById("datetimepicker");
+var datetimepicker = document.getElementById("txtdateTime");
 datetimepicker.value = new Date().toISOString().slice(0,16);
 
 function getDatetime() {
-  var str = datetimepicker.value;    
-  var d = new Date(str);
-  console.log('Current:\t', d.toLocaleString())
-  document.getElementById("s5").innerHTML = d.toLocaleString();
+    var str = datetimepicker.value;    
+    var d = new Date(str);
+    console.log('Current:\t', d.toLocaleString())
+    document.getElementById("s5").innerHTML = d.toLocaleString();
   
-  // Add 1 hour to datetime
-  d.setMinutes(d.getMinutes() + 10);
+    // Add 1 hour to datetime
+    d.setMinutes(d.getMinutes() + 10);
 
     console.log('After:\t', d.toLocaleString())
 }
